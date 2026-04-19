@@ -41,7 +41,7 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <MySessionProvider>
-        <CartContextProvider userCart={userCart}>
+        <CartContextProvider userCart={userCart!}>
         
         <Toaster />
         <Navbar/>

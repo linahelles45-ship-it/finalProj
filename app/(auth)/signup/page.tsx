@@ -177,7 +177,7 @@ export default function Signup() {
     })
 
     async function handleSignUp(values: singupDataType) {
-        const res = await fetch("https://routemisr.com", {
+        const res = await fetch("https://ecommerce.routemisr.com/api/v1/auth/signup", {
             body: JSON.stringify(values),
             method: "POST",
             headers: {

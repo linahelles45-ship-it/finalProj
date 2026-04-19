@@ -29,13 +29,12 @@ export default function CartContextProvider({children, userCart} : {children : R
     )} */
 
 
-
 import React, { createContext, ReactNode, useState } from 'react'
 import { CartItemType, CartResType } from '@/Types/cart.type'
 
 interface CartContextType {
     cartId: string;
-    setCartId: (id: string) => void;                        // ✅ أضفه
+    setCartId: (id: string) => void;    
     numberOfCartItems: number;
     setnumberOfCartItems: (count: number) => void;
     totalPriceOfCart: number;
