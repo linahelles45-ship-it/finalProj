@@ -1,35 +1,4 @@
-// import { categoryaction } from '@/app/_actions/category.action'
-// import { Star } from 'lucide-react';
-// import React from 'react'
 
-// export default async function page() {
-//     const category = await categoryaction();
-//   return (
-//     <div className="w-10/12 mx-auto py-5">
-
-//             {/* Hero */}
-//       <div className="bg-gradient-to from-violet-600 to-violet-800 rounded-2xl p-8 flex items-center gap-4 mb-8">
-//         <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-2xl text-white">
-//           <Star />
-//         </div>
-//         <div>
-//           <h1 className="text-white text-2xl font-semibold">All Category</h1>
-//           <p className="text-white/70 text-sm mt-1">Shop from your favourite category</p>
-//         </div>
-//       </div>
-
-//     <div className="grid grid-cols-3 lg:grid-cols-6 md:grid-cols-6  sm:grid-cols-4 gap-4">
-          
-//           <div className='mx-5 my-2 flex justify-center '>
-//           <div className='hover:p-5' >{category.image}</div>
-//           <div className='text-2xl  hover:text-emerald-500'>{category.name}</div>
-//           </div>
-
-//       </div>
-      
-//     </div>
-//   )
-// }
 import { categoryaction } from '@/app/_actions/category.action'
 import { CategoryType } from '@/Types/Product.types'
 import { LayoutGrid } from 'lucide-react';

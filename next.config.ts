@@ -1,8 +1,14 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-
+  transpilePackages: ['swiper', 'swiper/react', 'swiper/modules'],
+  
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "ecommerce.routemisr.com" },
+    ],
+  },
 };
 
 export default nextConfig;

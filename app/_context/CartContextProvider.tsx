@@ -1,33 +1,3 @@
-"use client"
- /*import React, { createContext, ReactNode, useState } from 'react'
-import { CartItemType, CartResType } from '@/public/src/Types/cart.type'
-
-export const cartContext = createContext( {  } )
-
-export default function CartContextProvider({children, userCart} : {children : ReactNode , userCart : CartResType }) {
-    // async function getDataFromAPI(){
-    //     const userCart = await getUserCart()
-    //     console.log("user cart", userCart);
-        
-    //     setnumberOfCartItems(userCart.numberOfCartItem)
-    // }
-    // useEffect( ()=> {
-    //     getDataFromAPI()
-    // },[])
-    const [numberOfCartItems , setnumberOfCartItems] = useState(userCart.numberOfCartItems)
-    // const [cartData , setCartData] = useState<>(userCart.data)
-
-    const [totalPriceOfCart , settotalPriseOfCart] = useState(userCart.data.totalCartPrice)
-    const [cartProducts , setcartProducts] = useState< CartItemType[]>(userCart.data.products)
-
-    return (
-    <>
-        <cartContext.Provider value={ {numberOfCartItems, setnumberOfCartItems ,totalPriceOfCart,settotalPriseOfCart,cartProducts,setcartProducts} }>
-            {children}
-        </cartContext.Provider>
-    </>
-    )} */
-
 
 import React, { createContext, ReactNode, useState } from 'react'
 import { CartItemType, CartResType } from '@/Types/cart.type'
