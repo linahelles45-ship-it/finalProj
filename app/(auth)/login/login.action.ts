@@ -2,22 +2,7 @@
 
 import { cookies } from "next/headers"
 import { loginDataType } from "./login.schema"
-
-// import { cookies } from 'next/headers';
-// import { loginDataType } from './login.schema';
-
-// export async function loginAction(values : loginDataType){
-
-
-//             const myCookies = await cookies()
-//             myCookies.set("token", finalRes.token , {
-//                 httpOnly : true,
-//                 maxAge : 60 * 60 * 24,
-//                 sameSite : "strict"
-//             })
-        
-//         return res.ok
-// }
+import { revalidatePath } from "next/cache"
 
 export async function loginAction(values: loginDataType) {
     const res = await fetch("https://ecommerce.routemisr.com/api/v1/auth/signin", {
@@ -35,7 +20,9 @@ export async function loginAction(values: loginDataType) {
             maxAge: 60 * 60 * 24,
             sameSite: "strict"
         })
+        revalidatePath("/") 
         return { success: true }
+
     }
 
     return { success: false, message: finalRes.message }
